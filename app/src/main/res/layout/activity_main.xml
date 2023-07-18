@@ -1,0 +1,718 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efecec">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_2sdp"
+            android:background="@drawable/border_three_d"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_weight="20"
+                android:background="@drawable/seal_of_up_ctd" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="60"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center|left"
+                    android:text="@string/uttar_pradesh"
+                    android:textColor="#132271"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/department_of_commercial_taxes"
+                    android:textColor="#132271"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_weight="20"
+                android:background="@drawable/ctd" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textview_version_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:padding="5dp"
+            android:text="version"
+            android:textAllCaps="true"
+            android:textColor="@color/red_dark"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Eway Bill Details"
+            android:textAllCaps="true"
+            android:textColor="#232323"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <RadioGroup
+            android:id="@+id/rdgr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RadioButton
+                android:id="@+id/type1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="EXUP to EXUP Transactions" />
+
+            <RadioButton
+                android:id="@+id/type2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Others Transactions"
+                android:visibility="visible" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/ll_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:background="#FFF"
+                card_view:cardCornerRadius="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="35"
+                        android:layout_height="match_parent"
+                        android:gravity="center|left"
+                        android:padding="7dp"
+                        android:text="EWay Bill No.:"
+                        android:textColor="#000"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        />
+
+
+                    <EditText
+                        android:id="@+id/EWB_no"
+                        android:layout_width="0dp"
+                        android:layout_weight="55"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edit_text_design"
+                        android:hint="Please Click On The Scan Icon "
+                        android:inputType="number"
+                        android:maxLength="12"
+                        android:padding="5dp"
+                        android:textColor="#696b6c"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/scanner1"
+                        android:layout_width="0dp"
+                        android:layout_weight="10"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/qr_scan" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:background="#FFF"
+                card_view:cardCornerRadius="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="35"
+                        android:layout_height="match_parent"
+                        android:gravity="center|left"
+                        android:layout_gravity="center"
+                        android:padding="7dp"
+                        android:text="Generated By:"
+                        android:textColor="#000"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+
+                    <EditText
+                        android:id="@+id/EWB_By"
+                        android:layout_width="0dp"
+                        android:layout_weight="65"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edit_text_design"
+                        android:hint=""
+                        android:maxLength="15"
+                        android:padding="5dp"
+                        android:textColor="#696b6c"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:background="#FFF"
+                card_view:cardCornerRadius="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="35"
+                        android:layout_height="match_parent"
+                        android:gravity="center|left"
+                        android:layout_gravity="center"
+                        android:padding="7dp"
+                        android:text="Date And Time:"
+                        android:textColor="#000"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+
+                    <EditText
+                        android:id="@+id/EWB_date_time"
+                        android:layout_width="0dp"
+                        android:layout_weight="65"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edit_text_design"
+                        android:lines="8"
+                        android:minLines="3"
+                        android:padding="5dp"
+                        android:textColor="#696b6c"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cv_vehicle_num"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:background="#FFF"
+                card_view:cardCornerRadius="4dp">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="35"
+                        android:layout_height="match_parent"
+                        android:gravity="center|left"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:text="Vehicle Number:"
+                        android:textColor="#000"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+
+                    <EditText
+                        android:id="@+id/vehicle_num"
+                        android:layout_width="0dp"
+                        android:layout_weight="65"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edit_text_design"
+                        android:maxLength="10"
+                        android:padding="5dp"
+                        android:textColor="#696b6c"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:background="#FFF"
+                card_view:cardCornerRadius="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="35"
+                        android:layout_height="match_parent"
+                        android:gravity="center|left"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:text="Validity:"
+                        android:textColor="#000"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:focusable="false"
+                        android:id="@+id/eway_validity"
+                        android:layout_width="0dp"
+                        android:layout_weight="55"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edit_text_design"
+                        android:enabled="false"
+                        android:inputType="datetime"
+                        android:maxLength="10"
+                        android:hint="Pick Date"
+                        android:padding="5dp"
+                        android:textColor="#696b6c"
+                        android:textSize="14sp"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/img_inv_date"
+                        android:layout_width="0dp"
+                        android:layout_weight="10"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:background="@android:drawable/ic_menu_my_calendar" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cv_s_gstin"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:background="#FFF"
+                card_view:cardCornerRadius="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="35"
+                        android:layout_height="match_parent"
+                        android:gravity="center|left"
+                        android:layout_gravity="center"
+                        android:padding="7dp"
+                        android:text="Supplier GSTIN:"
+                        android:textColor="#000"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+
+                    <EditText
+                        android:id="@+id/Supplier_gst"
+                        android:layout_width="0dp"
+                        android:layout_weight="65"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edit_text_design"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:inputType="textEmailAddress"
+                        android:padding="5dp"
+                        android:textColor="#696b6c"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cv_r_gstin"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:background="#FFF"
+                card_view:cardCornerRadius="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="35"
+                        android:layout_height="match_parent"
+                        android:gravity="center|left"
+                        android:padding="7dp"
+                        android:text="Recipient GSTIN:"
+                        android:textColor="#000"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/Recipient_gst"
+                        android:layout_width="0dp"
+                        android:layout_weight="65"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:hint=""
+                        android:background="@drawable/edit_text_design"
+                        android:inputType="textEmailAddress"
+                        android:padding="5dp"
+                        android:textColor="#696b6c"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cv_hsn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:background="#FFF"
+                card_view:cardCornerRadius="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="35"
+                        android:layout_height="match_parent"
+                        android:gravity="center|left"
+                        android:layout_gravity="center"
+                        android:padding="7dp"
+                        android:text="Item HSN:"
+                        android:textColor="#000"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+
+                    <EditText
+                        android:id="@+id/hsn_no"
+                        android:layout_width="0dp"
+                        android:layout_weight="65"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:hint=""
+                        android:background="@drawable/edit_text_design"
+                        android:inputType="textEmailAddress"
+                        android:padding="5dp"
+                        android:textColor="#696b6c"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cv_item_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:background="#FFF"
+                card_view:cardCornerRadius="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="35"
+                        android:layout_height="match_parent"
+                        android:gravity="center|left"
+                        android:layout_gravity="center"
+                        android:padding="7dp"
+                        android:text="Item Name:"
+                        android:textColor="#000"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+
+                    <EditText
+                        android:id="@+id/Item_name"
+                        android:layout_width="0dp"
+                        android:layout_weight="65"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:hint=""
+                        android:background="@drawable/edit_text_design"
+                        android:inputType="textEmailAddress"
+                        android:padding="5dp"
+                        android:textColor="#696b6c"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cv_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:background="#FFF"
+                card_view:cardCornerRadius="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="35"
+                        android:layout_height="match_parent"
+                        android:gravity="center|left"
+                        android:layout_gravity="center"
+                        android:padding="7dp"
+                        android:text="Quantity:"
+                        android:textColor="#000"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+
+                    <EditText
+                        android:id="@+id/Quantity"
+                        android:layout_width="0dp"
+                        android:layout_weight="65"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:hint=""
+                        android:background="@drawable/edit_text_design"
+                        android:inputType="numberSigned"
+                        android:padding="5dp"
+                        android:textColor="#696b6c"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cv_amt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:background="#FFF"
+                card_view:cardCornerRadius="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="35"
+                        android:layout_height="match_parent"
+                        android:gravity="center|left"
+                        android:layout_gravity="center"
+                        android:padding="7dp"
+                        android:text="Total Amount:"
+                        android:textColor="#000"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+
+                    <EditText
+                        android:id="@+id/total_amt"
+                        android:layout_width="0dp"
+                        android:layout_weight="65"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:hint=""
+                        android:background="@drawable/edit_text_design"
+                        android:inputType="numberDecimal"
+                        android:padding="5dp"
+                        android:textColor="#696b6c"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <LinearLayout
+                android:id="@+id/ll_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:layout_marginLeft="10dp"
+                    android:text="Please Upload the Bill Image:"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Click On the Camera icon:"
+                        android:textColor="#000"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/camera"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@android:drawable/ic_menu_camera" />
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/img_bill"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_margin="10dp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="10dp"
+                android:background="#268cd6"
+                android:text="Submit"
+                android:textAllCaps="true"
+                android:textColor="#FFF" />
+
+            <TextView
+                android:id="@+id/current_place"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="7dp"
+                android:text=""
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

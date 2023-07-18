@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Eway Bill Collection</string>
+
+    <string name="uttar_pradesh">Uttar Pradesh</string>
+    <string name="department_of_commercial_taxes">Department of Commercial Taxes</string>
+
+    <string name="turn_off_flashlight">Turn off flashlight</string>
+    <string name="turn_on_flashlight">Turn on Flashlight</string>
+    <string name="message">message</string>
+    <string name="str_no_internet">Internet not working. Please reconnect internet and try again.</string>
+</resources>

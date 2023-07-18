@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2b4181</color>
+    <color name="colorPrimaryDark">#2b4181</color>
+    <color name="colorAccent">#2b4181</color>
+
+    <color name="colorHeader">#E26002</color>
+    <color name="color_sky_blue">#00A5FF</color>
+    <color name="green_new">#6fd8ca</color>
+    <color name="red">#D23738</color>
+    <color name="green_new_light">#b6ece5</color>
+    <color name="green">#7CAB3F</color>
+    <color name="green_light">#d59ec769</color>
+    <color name="white_light">#f1ffffff</color>
+    <color name="transparent_white">#89ffffff</color>
+    <color name="backgroud_color">#349395</color>
+    <color name="color_black">#000000</color>
+    <color name="color_darkpurple">#802378</color>
+    <color name="yellowd_dark1">#FAEA00</color>
+    <color name="color_lightpurple">#FFC69FC3</color>
+    <color name="color_lightorange">#DFA124</color>
+    <color name="transparent_black">#50000000</color>
+    <color name="color_gray">#A5A9AE</color>
+    <color name="color_shadow_gray">#9CA4AE</color>
+    <color name="color_text_darkergray">#7c7c7c</color>
+    <color name="color_drawerhead">#2A3747</color>
+    <color name="color_drawerhead1">#233140</color>
+    <color name="color_back">#e4e8f2</color>
+    <color name="color_back1">#a0bac9</color>
+    <color name="color1">#10000000</color>
+    <color name="actionColorBackground">#1d4491</color>
+    <color name="action_grid_border">#cfd7e7</color>
+    <color name="action_grid_text">#304061</color>
+    <color name="color_lightpurple1">#EFBFEB</color>
+    <color name="colorTab1">#E26002</color>
+    <color name="color_edittext">#F8FFBE56</color>
+    <color name="colorTab2">#FFA8B6C7</color>
+    <color name="colorTab3">#0E315B</color>
+    <color name="colorTab4">#31598A</color>
+    <color name="colortest">#FFFFE44E</color>
+    <color name="colortest1">#FFFBDF</color>
+    <color name="textblue">#F8FFBE56</color>
+    <color name="blue">#00ADEF</color>
+
+    <color name="img_1">#b5bfce</color>
+    <color name="img_2">#ced3da</color>
+    <color name="img_3">#e0e2e4</color>
+
+    <color name="happy_orange">#F49C1E</color>
+    <color name="flower_outer_mapping">#ffe8c7</color>
+
+    <color name="curated_light">#c6c6c6</color>
+    <color name="curated">#777777</color>
+    <color name="bg_color">#f7f7f7</color>
+    <color name="black">#000000</color>
+    <color name="title_color">#AD0000</color>
+    <color name="gray">#656565</color>
+    <color name="white">#FFFFFF</color>
+    <color name="indigo_ink">#283655</color>
+    <color name="black_effective">#2a2a2a</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent1">#79000000</color>
+
+    <color name="view_line">#F7F7F9</color>
+    <color name="icon_default">#F0F0E9</color>
+
+
+    <color name="being_dark">#B34C26</color>
+    <color name="happy">#0083ff</color>
+    <color name="forgot">#007AFF</color>
+    <color name="audio_background">#FDEFE9</color>
+    <color name="media">#EA6D78</color>
+    <color name="gratitude_txt">#666666</color>
+    <color name="gratitude_btn">#FCBC54</color>
+    <color name="cal">#ff0801</color>
+    <color name="white_trans">#99FFFFFF</color>
+
+    <color name="red_dark">#F06423</color>
+    <color name="red_dark2">#D85A1B</color>
+    <color name="cyan_light">#c9ebee</color>
+    <color name="cyan">#b5e3e7</color>
+    <color name="cyan_dark">#70BDC6</color>
+    <color name="navy_blue">#214258</color>
+    <color name="navy_blue_dark">#1C3A4E</color>
+    <color name="light_green">#78DC96</color>
+    <color name="dark_green">#00b300</color>
+    <color name="light_blue">#55C8F0</color>
+    <color name="blue_black_dark">#13171d</color>
+    <color name="blue_black_light">#516179</color>
+    <color name="blue_grey_light">#A5B4C8</color>
+    <color name="orange">#FFA500</color>
+    <color name="yellowd_dark">#F1E63E</color>
+    <color name="yellow">#fff44f</color>
+    <color name="color_amber">#F5C021</color>
+    <color name="coral_orange">#FF8362</color>
+    <color name="colorButton">#0277bd</color>
+    <color name="colorPrimaryripple">#4e6987</color>
+    <color name="colorPrimaryLight">#3d5468</color>
+</resources>

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#efecec">
+
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cv_bill_child"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        card_view:cardCornerRadius="4dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#FFF">
+
+        <LinearLayout
+            android:id="@+id/ll_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="12"
+            >
+
+
+            <TextView
+                android:id="@+id/checking_date"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="#0d0d0d"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="12sp"
+
+                android:text="Checking Date"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#c8cacf"
+                />
+            <TextView
+                android:id="@+id/place"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="#444544"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="12sp"
+                android:text="Checking place"/>
+
+      <!--      <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#c8cacf"
+                />
+            <TextView
+                android:id="@+id/longi"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="#444544"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="12sp"
+                android:text="Longitude"/>-->
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#c8cacf"
+                />
+            <TextView
+                android:id="@+id/vehicle_num"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="#0d0d0d"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="12sp"
+
+                android:text="Vehicle No."/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#c8cacf"
+                />
+            <TextView
+                android:id="@+id/EWB_no"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="#0d0d0d"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="12sp"
+
+                android:text="Eway Bill No."/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+
+                android:background="#c8cacf"
+                />
+            <TextView
+                android:id="@+id/EWB_Date_and_time"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="#0d0d0d"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="12sp"
+
+                android:text="Eway Bill Date And Time"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+
+                android:background="#c8cacf"
+                />
+            <TextView
+                android:id="@+id/validity"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="#0d0d0d"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="12sp"
+
+                android:text="Validity"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+
+                android:background="#c8cacf"
+                />
+            <TextView
+                android:id="@+id/s_gstin"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="#0d0d0d"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="12sp"
+
+                android:text="Supplier GSTIN"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+
+                android:background="#c8cacf"
+                />
+            <TextView
+                android:id="@+id/r_gstin"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="#0d0d0d"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="12sp"
+
+                android:text="Recipient GSTIN"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+
+                android:background="#c8cacf"
+                />
+            <TextView
+                android:id="@+id/hsn"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="#0d0d0d"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="12sp"
+
+                android:text="Item HSN"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+
+                android:background="#c8cacf"
+                />
+            <TextView
+                android:id="@+id/item_name"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="#0d0d0d"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="12sp"
+
+                android:text="Item Name"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+
+                android:background="#c8cacf"
+                />
+            <TextView
+                android:id="@+id/quantity"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="#0d0d0d"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="12sp"
+
+                android:text="Quantity"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+
+                android:background="#c8cacf"
+                />
+            <TextView
+                android:id="@+id/amount"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="#0d0d0d"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="12sp"
+
+                android:text="Total Amount"/>
+
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

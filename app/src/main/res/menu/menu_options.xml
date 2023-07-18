@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/view_user_profile"
+        android:title="User Profile"
+        />
+
+    <item
+        android:id="@+id/view_uploaded_bill"
+        android:title="View Uploaded Bills (EWB)"
+        />
+
+    <item
+        android:id="@+id/view_GetVehicleDetails"
+        android:title="View RFID Vehicle Details"
+        />
+    <item
+        android:id="@+id/view_GetRedFlagVehicleDetails"
+        android:title="View Red Flag Vehicle Details"
+        />
+
+    <item
+        android:id="@+id/Logout"
+        android:title="Logout"
+        />
+</menu>
